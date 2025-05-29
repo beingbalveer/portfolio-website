@@ -31,11 +31,11 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
-              width="192"
-              height="192"
-              quality="95"
+              src="/dp.jpeg"
+              alt="Balveer Dhanoriya"
+              width={64}
+              height={64}
+              quality={95}
               priority={true}
               className="h-16 w-16 rounded-full object-cover border-2 border-white/40 shadow-sm"
             />
@@ -48,7 +48,7 @@ export default function Intro() {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            Ricardo
+            Balveer Dhanoriya
           </motion.h1>
 
           <motion.p
@@ -57,14 +57,14 @@ export default function Intro() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
           >
-            Full-stack developer with 8 years in React & Next.js
+            Senior Mobile Developer specializing in Android, iOS & Cross-platform Development
           </motion.p>
 
           <motion.div
             className="flex items-center gap-2 text-sm"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
           >
             <Link
               href="#contact"

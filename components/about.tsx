@@ -11,39 +11,43 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28 px-4"
+      className="mb-28 max-w-[45rem] text-left leading-7 scroll-mt-28 px-4"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+      <div className="space-y-5">
+        <motion.h2 
+          className="text-2xl font-medium capitalize mb-8"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+        >
+          About me
+        </motion.h2>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+        <motion.p
+          className="text-gray-700 dark:text-gray-300"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          Computer Science graduate from <span className="font-medium">NIT Jaipur</span> (2017) with{" "}
+          <span className="font-medium">7+ years</span> of expertise in mobile development. Proficient in{" "}
+          <span className="font-medium">Android, iOS, Flutter, and React Native</span> development.
+        </motion.p>
+
+        <motion.p
+          className="text-gray-700 dark:text-gray-300"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          Currently specializing in <span className="font-medium">Kotlin Multiplatform</span> development, 
+          focusing on creating efficient cross-platform solutions. I'm passionate about building scalable 
+          mobile applications and exploring emerging technologies through personal projects.
+        </motion.p>
+      </div>
     </motion.section>
   );
 }
